@@ -1,0 +1,601 @@
+$accent: #5671F6
+$dark: #363636
+$gray: #A5A5A5
+body
+	font-family: 'Roboto', sans-serif
+	box-sizing: border-box
+	font-weight: 400
+ul, li
+	display: block
+	margin: 0
+	padding: 0
+h1, h2, h3, h4, p
+	margin: 0
+	padding: 0
+button
+	outline: none
+.container
+	max-width: 1130px
+	margin: 0 auto
+.no-scroll
+	overflow: hidden
+.header
+	display: flex
+	align-items: center
+	height: 104px
+	border-bottom: 1px solid #D4D4D4
+	.logo
+		padding: 0 35px
+	.line
+		height: 100%
+		width: 1px
+		background-color: #D4D4D4
+		margin-right: 34px
+	.m-nav
+		display: flex
+		height: 100%
+		align-items: center
+		flex-grow: 1
+		.search-input
+			border: none
+			padding-left: 34px
+			background: url(../img/search-icon.svg) no-repeat center  left 10px
+			outline: none
+			font-size: 18px
+			line-height: 21px
+			color: $gray
+		.menu-bar
+			margin: 0 44px 0 auto
+			.menu
+				display: flex
+				&-link
+					margin: 0 9px
+					color: $dark
+					text-decoration: none
+					font-size: 18px
+					line-height: 21px
+		.btn-set
+			height: 100%
+			border-left: 1px solid #D4D4D4
+			&-reg
+				padding: 0 34px
+				border: none
+				background-color: #fff
+				cursor: pointer
+				height: 99%
+				color: $accent
+				font-size: 18px
+				line-height: 21px
+			&-log
+				background-color: $accent
+				height: 100%
+				padding: 0 50px
+				color: #fff
+				font-size: 18px
+				line-height: 21px
+				border: none
+				cursor: pointer
+	.mobile-bar
+		display: none
+		margin-right: 10px
+		.m-menu,
+		.m-search
+			padding: 5px
+			background-color: #fff
+			border: none
+			margin: 0 2px
+			&-line
+				display: block
+				height: 2px
+				width: 20px
+				background-color: #000
+				margin: 3px 0
+.main-screen
+	padding: 80px 0
+	border-bottom: 1px solid #D4D4D4
+	&-wrapper
+		display: flex
+		align-items: center
+	.poster
+		display: flex
+		margin-right: 60px
+		text-align: center
+		width: 358px
+		border-top-right-radius: 5px
+		border-top-left-radius: 5px
+		flex-direction: column
+		&-link
+			display: flex
+			padding: 25px 80px
+			text-decoration: none
+			align-items: center
+			border: 1px solid #D4D4D4
+			font-size: 16px
+			border-radius: 0px 0px 5px 5px
+			&-icon
+				padding-right: 10px
+	.text
+		&-title
+			font-weight: 900
+			font-size: 36px
+			line-height: 42px
+			color: $dark
+		&-subtitle
+			display: flex
+			font-size: 18px
+			line-height: 21px
+			color: $gray
+			margin: 16px 0 32px 
+		&-desc
+			font-size: 14px
+			line-height: 150%
+			max-width: 70%
+		.info
+			display: flex
+			font-size: 16px
+			line-height: 19px
+			padding-top: 40px
+			.left-site
+				padding-right: 40px
+			&-text
+				display: flex
+				&-bold
+					display: inline-block
+					width: 100px
+					padding-bottom: 16px
+		.rating
+			display: flex
+			align-items: center
+			margin-top: 34px
+			&-counter
+				padding-right: 28px
+			&-percent
+				display: flex
+				text-align: center
+				color: $accent
+				font-weight: bold
+				font-size: 28px
+				line-height: 33px
+				padding: 34px 24px
+				border: 1px solid #5671F6
+				border-radius: 10px
+			&-title
+				font-weight: bold
+				font-size: 18px
+				line-height: 21px
+				margin: 0 0 12px 0
+			&-desc
+				display: flex
+				font-weight: 400
+				font-size: 16px
+				line-height: 19px
+				margin: 0 0 5px 0
+				&-bold
+					padding-left: 7px
+.members
+	padding: 70px 0 100px
+	.choice
+		display: flex
+		&-view
+			display: flex
+			font-weight: 400
+			font-size: 24px
+			line-height: 28px
+			color: $gray
+			margin-bottom: 60px
+			cursor: pointer
+			&:first-child
+				margin-right: 30px
+		.active
+			font-weight: 900
+			font-size: 24px
+			line-height: 28px
+			color: $dark
+	.gallery
+		display: none
+		justify-content: space-between
+		flex-wrap: wrap
+	.visible
+		display: flex
+		visibility: visible
+	.card
+		display: flex
+		align-items: center
+		width: 204px
+		flex-basis: 25%
+		margin-bottom: 35px
+		&-img
+			width: 100px
+			height: 100px
+			padding-right: 20px
+		&-name
+			color: $accent
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			padding-bottom: 6px
+			&-en
+				font-weight: 400
+				font-size: 16px
+				line-height: 19px
+.news
+	padding: 70px 0 100px
+	background-color: #F3F3F3
+	&-title
+		font-weight: 900
+		font-size: 24px
+		line-height: 28px
+		color: $dark
+		padding-bottom: 65px
+	.news-card
+		flex-basis: 19%
+		background-color: #fff
+		border-radius: 5px
+		padding: 30px 30px 50px
+		min-height: 90px
+		&-data
+			font-size: 14px
+			line-height: 16px
+			padding-bottom: 14px
+		&-title
+			font-weight: 900
+			font-size: 15px
+			line-height: 16px
+@media (max-width: 1200px)
+	.container
+		max-width: 960px
+	.members
+		.card
+			&-img
+				height: 70px
+				width: 70px
+	.news
+		&-cards
+			.news-card
+				flex-basis: 18%
+				padding: 30px 30px 40px
+	.header
+		.menu-bar
+			margin: 0 34px 0 auto
+			.menu
+				&-link
+					margin: 0 7px
+@media (max-width: 1084px)
+	.header
+		height: 70px
+		.search-input
+			font-size: 16px
+		.menu-bar
+			margin: 0 55px 0 auto
+			.menu
+				&-link
+					margin: 0 7px
+					font-size: 14px
+		.btn-set
+			&-reg
+				padding: 0 24px
+				font-size: 16px
+			&-log
+				padding: 0 36px
+				font-size: 16px
+	.main-screen
+		padding: 60px 0
+		.poster
+			margin-right: 50px
+		.text
+			&-title
+				font-size: 30px
+			&-subtitle
+				font-size: 16px
+				margin: 12px 0 24px 
+			&-desc
+				max-width: 80%
+			.rating
+				margin-top: 24px
+				&-percent
+					font-size: 26px
+					padding: 30px 24px
+				&-title
+					font-size: 16px
+				&-desc
+					font-size: 14px
+@media (max-width: 991px)
+	.container
+		max-width: 760px
+	.header
+		height: 70px
+		.logo
+			padding: 0 12px
+		.line
+			margin-right: 8px
+		.search-input
+			font-size: 14px
+		.menu-bar
+			margin: 0 20px 0 auto
+			.menu
+				&-link
+					margin: 0 5px
+					font-size: 14px
+		.btn-set
+			&-reg
+				padding: 0 14px
+				font-size: 14px
+			&-log
+				padding: 0 30px
+				font-size: 14px
+	.main-screen
+		padding: 60px 0
+		.poster
+			margin-right: 50px
+		.text
+			&-title
+				font-size: 24px
+				line-height: 29px
+			&-subtitle
+				font-size: 14px
+				margin: 12px 0 18px 
+			&-desc
+				max-width: 100%
+			.info
+				font-size: 13px
+				padding-top: 30px
+				.left-site
+					padding-right: 20px
+				&-text
+					&-bold
+						width: 70px
+						padding-bottom: 16px
+			.rating
+				margin-top: 18px
+				&-percent
+					font-size: 22px
+					padding: 26px 24px
+				&-title
+					font-size: 15px
+				&-desc
+					font-size: 13px
+	.members
+		padding: 60px 0 80px
+		.choice
+			&-view
+				font-size: 20px
+				padding-bottom: 40px
+			.active
+				font-size: 20px
+		.card
+			width: 150px
+			margin-bottom: 25px
+			&-img
+				width: 60px
+				height: 60px
+				padding-right: 15px
+			&-name
+				font-size: 14px
+				line-height: 19px
+				padding-bottom: 6px
+				&-en
+					font-size: 14px
+	.news
+		padding: 60px 0
+		&-title
+			font-size: 20px
+			padding-bottom: 45px
+		&-cards
+			.news-card
+				flex-basis: 42%
+				padding: 25px 25px 40px
+				margin-bottom: 20px
+				&-data
+					font-size: 12px
+				&-title
+					font-size: 14px
+@media (max-width: 768px)
+	.container
+		max-width: 560px
+	.header
+		.search-input
+			padding-left: 34px
+			margin-right: auto
+		.menu-bar
+			display: none
+	.main-screen
+		&-wrapper
+			flex-wrap: wrap
+			justify-content: center
+			.poster
+				margin-right: 0
+				width: 100%
+				height: auto
+				&-img
+					height: 600px
+				&-link
+					padding: 20px 80px
+					justify-content: center
+			.text
+				justify-content: center
+				&-title
+					margin-top: 50px
+					font-size: 26px
+				&-subtitle
+					font-size: 18px
+					margin: 16px 0 32px 
+					justify-content: center
+				&-desc
+					font-size: 16px
+					line-height: 150%
+					max-width: 100%
+				.info
+					font-size: 16px
+					padding-top: 40px
+					.left-site
+						padding-right: 40px
+					&-text
+						display: flex
+						&-bold
+							width: 100px
+				.rating
+					margin-top: 34px
+					&-percent
+						font-size: 28px
+						padding: 34px 24px
+					&-title
+						font-size: 18px
+					&-desc
+						font-size: 16px
+	.members
+		.choice
+			&-view
+				font-size: 22px
+			.active
+				font-size: 22px
+		.card
+			flex-basis: 40%
+			margin-bottom: 35px
+			&-img
+				width: 80px
+				height: 80px
+				padding-right: 20px
+			&-name
+				font-size: 16px
+				&-en
+					font-size: 16px
+	.news
+		&-title
+			font-size: 22px
+		&-cards
+			.news-card
+				flex-basis: 40%
+				padding: 25px 25px 40px
+				margin-bottom: 20px
+				&-data
+					font-size: 12px
+				&-title
+					font-size: 14px
+@media (max-width: 576px)
+	.container
+		max-width: 90%
+	.header
+		height: 65px
+		.logo
+			padding-left: 28px
+		.line
+			display: none
+		.m-nav
+			display: none
+			flex-direction: column
+			align-items: center
+			justify-content: space-around
+			position: fixed
+			left: 0
+			top: 65px
+			right: 0
+			bottom: 0
+			height: calc(100% - 64px)
+			background-color: #5671F6
+		.active
+			display: flex
+			.search-input
+				margin-right: 0
+				background: #fff
+				width:260px
+				height: 50px
+				border-radius: 5px
+			.menu-bar
+				display: flex
+				margin: 0
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.menu
+					display: block
+					&-link
+						display: flex
+						color: #fff
+						margin: 0
+						margin-bottom: 18px
+			.btn-set
+				display: flex
+				height: auto
+				border-left: none
+				flex-direction: column
+				&-reg
+					color: #fff
+					padding: 0 34px
+					background-color: transparent
+					margin-bottom: 30px
+				&-log
+					background-color: transparent
+					height: 100%
+					padding: 0 50px
+		.mobile-bar
+			display: flex
+			margin-left: auto
+	.main-screen
+		padding: 30px 0 70px
+		.poster
+			width: 358px
+			&-img
+				height: 470px
+			&-link
+				padding: 28px auto
+		.text
+			&-title
+				margin-top: 30px
+				font-size: 20px
+				line-height: 23px
+				color: $dark
+			&-subtitle
+				justify-content: start
+				font-size: 14px
+				line-height: 16px
+				margin: 12px 0 26px 
+			&-desc
+				font-size: 14px
+				max-width: 100%
+			.info
+				flex-wrap: wrap
+				.left-site
+					padding-right: 0
+			.rating
+				margin-top: 40px
+				&-desc
+					font-size: 14px
+	.members
+		.choice
+			&-view
+				font-size: 18px
+			.active
+				font-size: 18px
+		.card
+			margin-left: 28px
+			flex-basis: 100%
+			margin-bottom: 35px
+			&-img
+				width: 80px
+				height: 80px
+				padding-right: 20px
+			&-name
+				font-size: 16px
+				&-en
+					font-size: 16px
+	.news
+		padding: 50px 0 60px
+		&-title
+			font-size: 20px
+			line-height: 23px
+			padding-bottom: 40px
+		&-cards
+			.news-card
+				flex-basis: 60%
+				padding: 30px 30px 50px
+				&-data
+					font-size: 14px
+					line-height: 16px
+				&-title
+					font-weight: 900
+					font-size: 14px
+					line-height: 16px
+@media (max-width: 320px)
+	.main-screen
+		.poster
+			width: 300px
